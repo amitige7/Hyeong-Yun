@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      div{
+        border:5px solid gray;
+      }
+      #grid{
+        border:5px solid pink;
+        display:grid;
+        grid-template-columns: 150px 1fr;
+        <!-- 앞에건 150px 고정, 뒤에는 나머지 공간을 다 씀 -->
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grid">
+      <div>NAVIGATION</div>
+      <div>ARTICLE</div>
+    </div>
+    <!-- div는 block level element(화면 전체를 써서 줄바꿈),
+      span은 inline element, 겉 div는 감싸안아주는 div-->
+  </body>
+</html>
