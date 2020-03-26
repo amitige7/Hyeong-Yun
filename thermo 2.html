@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <title>2법칙</title>
+  <meta charset="utf-8">
+  <style media="screen">
+  body{
+    margin:0;
+  }
+  /*
+  a {
+    color:black;
+    text-decoration: none;
+  }하이퍼링크 밑줄을 없앰 */
+  ol{
+    width:100px;
+    border-right:1px solid gray;
+    margin:0;
+    padding:20px;
+    border-bottom:1px solid gray;
+  }
+  h1 {
+    font-size:45px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin:0;
+    padding:10px;
+  }
+  #important{
+    font-weight:bold;
+    color:red;
+  }
+  /*
+  #grid ol{
+    padding-left:33px;
+  }*/
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #article{
+    padding-left:30px;
+  }
+  .saw{
+    color:blue;
+  }
+  @media(max-width:800px){
+    #grid{
+      display: block;
+    }
+    ol{
+      border-right:none;
+      border-bottom:none;
+    }
+    h1{
+      border-bottom:none;
+    }
+  }
+  </style>
+</head>
+<body>
+  <h1><a href="index.html">2법칙</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="thermo 0.html" class="saw">열, 일, 평형</a></li>
+      <li><a href="thermo 1.html" class="saw">1법칙</a></li>
+      <li><a href="thermo 2.html" id="important">2법칙</a></li>
+      <li><a href="thermo 3.html" class="saw">3법칙</a></li>
+    </ol>
+    <div id="article">
+      <h2>엔트로피 변화와 반응의 자발성</h2>
+      <p>
+        모든 자발적 과정은 우주 전체의 엔트로피가 증가하는 방향으로 일어남<br>
+        열린계, 닫힌계에서 엔트로피가 감소해도 자발적인 반응이 일어날 수 있음(엔트로피가 증가하는 방향)<br>
+        고립계에선 물질 및 에너지를 교환할 수 없으므로, 계의 엔트로피가 증가하면 자발적 반응<br><br><br>
+        온도가 높은 곳에서 보내진 열을 온도가 낮은 곳으로 보내지 않고 일로만 전환하는 것은 불가능함<br>
+        ※열에너지를 일에너지로 100%변환하는 것은 불가능(효율 100% 열기관은 존재하지 않음)<br><br>
+        온도가 낮은 곳에서 보내진 열을 일로 전환하면서 온도가 높은 곳으로 보낼 수 없음<br>
+        ※섭씨 30도의 물에 얼음 넣는다고 물이 끓을 수는 없다<br>
+    </p>
+    </div>
+  </div>
+</body>
+</html>

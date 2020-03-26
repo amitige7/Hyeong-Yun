@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+  <title>열역학</title>
+  <meta charset="utf-8">
+  <style>
+    body{
+      margin:0;
+    }
+    /*
+    a {
+      color:black;
+      text-decoration: none;
+    }*/
+    #important{
+      font-weight:bold;
+      color:red;
+    }
+    .saw{
+      color:blue;
+    }
+    h1 {
+      font-size:45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:10px;
+    }
+    ol{
+      padding:20px;
+    }
+    .container{
+      display:grid;
+      grid-template-columns:
+      [left-start] 20%
+      [left-end right-start] 1fr;
+      [right-end];
+    }
+    .형윤{
+      font-weight:bold;
+      color:red;
+    }
+    /*
+    .left{
+      padding-left:30px;
+    }
+    */
+  </style>
+  <!--
+  a 태그 관련한 글씨색은 모두 blue계열
+  .을 앞에 붙이면 class가 saw인 걸 뜻함
+  id > class > tag 우선순위로 발동
+  단, id 값은 단 한번만 등장해야함
+  -->
+</head>
+<body>
+  <h1><a href="index.html">열역학</a></h1>
+  <div class="container">
+    <div class="left" style="padding-left:30px">
+  <ol>
+    <li><a href="thermo 0.html" class="saw">열, 일, 평형</a></li>
+    <li><a href="thermo 1.html" class="saw">1법칙</a></li>
+    <li><a href="thermo 2.html" id="important">2법칙</a></li>
+    <li><a href="thermo 3.html" class="saw">3법칙</a></li>
+  </ol>
+    </div>
+  <!--
+  class는 스타일을 묶어서 지정할 때 사용하는 이름
+
+  <h1><a href="index.html">열역학</a></h1>
+  <ol>
+    <li><a href="thermo 1.html" style="color:gray;">1법칙</a></li>
+    <li><a href="thermo 1.html"><front color="red">1법칙</font></a></li>
+    <li><a href="thermo 2.html"><front color="red">2법칙</font></a></li>
+    <li><a href="thermo 3.html"><front color="red">3법칙</font></a></li>
+  </ol>
+-->
+    <div class="right">
+      <h2><!--<a href="https://en.wikipedia.org/wiki/Laws_of_thermodynamics"
+      target="_blank" title="낚시아님">-->Summary</h2>
+      <p>열역학 1법칙 - 에너지 보존 법칙<br>
+      열, 일은 에너지의 한 형태이고, 두 에너지는 서로 교환이 가능함</p>
+      <p>열역학 2법칙(에너지 흐름의 <span class="형윤">방향성</span>)</br>
+      <strong>자연적인 상황에서, <span style="color:red">에너지는 언제나 못쓰는형태인 열에너지로 가게됨
+      </strong></span>(효율 100% 열기관 X)<br></p>
+      <!--span은 일부만을 묶어줌-->
+      <p>열역학 3법칙<br>
+        엔트로피는 절대영도에 가까워질수록 변화량이 0에 수렴하여, 상수값을 갖게됨</p>
+      <p style="margin-top:45px;">열역학과 열전달과 차이<br>
+        열역학 - 정적인 상황에서 에너지 전달량을 주로 다룸(변화 후 최종상태)<br>
+        열전달 - 동적인 상황에서 온도차에 따른 에너지(열) 전달율을 다룸<br>
+        &nbsp;&emsp;&emsp;&ensp;&ensp;
+        (이동 및 시간에 따른 분포와 변화)
+      </p>
+      <!-- p는 단락을 나눔, br은 줄바꿈 -->
+      <img src="thermodynamics.jpg" width="50%">
+    </div>
+  </div>
+</body>
+</html>
